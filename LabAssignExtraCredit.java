@@ -20,14 +20,17 @@ public class FinchSlideGUI extends JPanel {
     private JLabel[] labels;
     private String[] text = {"Left Wheel Velocity", "Right Wheel Velocity",
         "Red", "Green", "Blue"};
-    private JPanel redPanel = new JPanel(new BorderLayout());
-    private JPanel greenPanel = new JPanel(new BorderLayout());
-    private JPanel bluePanel = new JPanel(new BorderLayout());
+    private JPanel redPanel; 
+    private JPanel greenPanel; 
+    private JPanel bluePanel;
 
     FinchSlideGUI() {
 
         setLabels();
         setSliders();
+        redPanel = new JPanel(new BorderLayout());
+        greenPanel = new JPanel(new BorderLayout());
+        bluePanel  = new JPanel(new BorderLayout());
 
         add(labels[0]);//left wheel velocity label
         add(leftWheel);//left wheel velcity slider
