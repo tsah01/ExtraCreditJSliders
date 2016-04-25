@@ -17,7 +17,7 @@ public class DriveTheFinch {
        
         JFrame frame = new JFrame();
         
-        frame.add(new LabAssignExtraCredit());
+        frame.add(new FinchSlideGUI());
         frame.setSize(300,350);
         frame.setTitle("Drive the Finch");
         frame.setLocationRelativeTo(null);
